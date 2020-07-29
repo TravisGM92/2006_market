@@ -14,4 +14,10 @@ class Vendor
     @inventory[item] = amount
   end
 
+  def potential_revenue
+    @inventory.map do |k,v|
+      ((k.price.gsub(/\D/,'').to_i.to_f/100)*v)
+    end.sum
+  end
+
 end
