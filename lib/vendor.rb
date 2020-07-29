@@ -6,4 +6,10 @@ class Vendor
     @inventory = {}
   end
 
+  def check_stock(item)
+    if @inventory.none?(item)
+      0
+    end
+  end
+
 end
