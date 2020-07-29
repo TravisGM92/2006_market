@@ -13,11 +13,8 @@ class VendorTest < Minitest::Test
   end
 
   def test_it_has_a_name
-    skip
-    item1 = Item.new({name: 'Peach', price: "$0.75"})
-    item2 = Item.new({name: 'Tomato', price: '$0.50'})
+    vendor = Vendor.new("Rocky Mountain Fresh")
 
-    assert_equal 'Peach', item1.name
-    assert_equal 'Tomato', item2.name
+    assert_equal "Rocky Mountain Fresh", vendor.name
   end
 end
