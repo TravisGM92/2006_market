@@ -58,6 +58,9 @@ class VendorTest < Minitest::Test
     assert_equal 12, vendor.check_stock(item2)
   end
 
+  def test_it_can
+
+  end
 
 
 end
