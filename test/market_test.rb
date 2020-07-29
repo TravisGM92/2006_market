@@ -107,12 +107,10 @@ class MarketTest < Minitest::Test
     market.add_vendor(vendor1)
     market.add_vendor(vendor2)
     market.add_vendor(vendor3)
-    expected = [vendor1]
+    expected = [vendor1, vendor3]
 
     assert_equal expected, market.vendors_that_sell(item1)
   end
-
-
 
 
 end
